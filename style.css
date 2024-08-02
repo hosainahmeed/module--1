@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Major+Mono+Display&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&family=Major+Mono+Display&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'primary_font';
+    src: url('Bulevar-Regular.9f86a6f.woff') format('woff');
+}
+
+:root {
+    --primary-color: #111;
+    --primary-color2: #fff;
+    --secondary-color: #8D6E63;
+    --accent-color: #e09188;
+    --accent-color-2: #fff ;
+}
+
+body[theme="dark"] {
+    background-color: var(--primary-color);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+
+body[theme="dark"] .wright {
+    color: var(--accent-color-2);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+
+body[theme="salmon"] {
+    background-color: var(--accent-color);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+
+body[theme="salmon"] .wright {
+    color: var(--accent-color-2);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+
+
+body[theme="light"] {
+    background-color: var(--primary-color2);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+
+body[theme="light"] .wright {
+    color: var(--primary-color);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'primary_font', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.porto{
+    font-stretch: expanded;
+    color: #ffffff3d;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
+.img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 1000px;
+    height: 700px;
+}
+
+
+.dg.ac{
+    display: none;
+}
+
+.details{
+    font-weight: 100;
+    font-family: sans-serif;
+    text-align: center;
+    opacity: 0.4;
+}
+
+.textdiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.follower {
+    width: 0vw;
+    height: 0vw;
+    border-radius: 50%;
+    background-color: rgb(28, 28, 194);
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0; 
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    cursor: none;
+    opacity: 0;
+}
+
+
+.pDive p{
+    font-family: sans-serif;
+    letter-spacing: -0.025em;
+}
